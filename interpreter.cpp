@@ -34,7 +34,13 @@ int main()
 		}
 		if(command=="display")
 		{
-			
+			int val1=memory[variableNames[0]]];
+			int val2=memory[variableNames[1]]];
+		    int val1=memory[variableNames[2]]];
+		    if(display=="biggest")
+		      if(val1>val2 && val1>val3)
+		      cout<<" is biggest"<<val1<<endl;
+		      
 		}
 		
 		
