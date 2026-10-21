@@ -26,7 +26,7 @@ int main()
 		if(command == "take")//to ensure the syntax is accurate
 		{
 			int usertype;//to store written variables
-			cout<<"enter your variable"<<variable;
+			cout<<variable;
 			cin>>usertype;//for user to type
 			memory[variable]= usertype;//to memorize all varables
 			variableNames.push_back(variable);//to store a list of variables
@@ -34,13 +34,30 @@ int main()
 		}
 		if(command=="display")
 		{
-			int val1=memory[variableNames[0]]];
-			int val2=memory[variableNames[1]]];
-		    int val1=memory[variableNames[2]]];
-		    if(display=="biggest")
-		      if(val1>val2 && val1>val3)
-		      cout<<" is biggest"<<val1<<endl;
-		      
+			int val1=memory[variableNames[0]];
+			int val2=memory[variableNames[1]];
+		    int val3=memory[variableNames[2]];
+		    if(variable=="biggest")
+		      {
+			  if(val1>=val2 && val1>=val3)
+		      {
+			  cout<<val1<<"is biggest"<<endl;  
+		  }
+		  if(val2>=val1 && val2>=val3)
+		  {
+		  	cout<<val2<<"is biggest"<<endl;	 
+			   }
+		  	if(val3>=val1 && val3>=val2)
+		  	{
+		  		cout<<val3<<"is biggest"<<endl;
+		}
+	}
+	     else if(variable=="average")
+	     {
+	     	double avg = (val1 + val2 + val3) / 3.0;
+                cout << "The average is " << avg << endl;
+		 }
+	
 		}
 		
 		
