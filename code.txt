@@ -1,0 +1,7 @@
+take x=10
+take y=18
+take z=14
+store x
+store y
+store z
+display average

@@ -18,6 +18,10 @@ int main()
 		string text;//the destination where file lines be stored
 	while(getline(filename,text))//loop for every variable typed
 	{
+		size_t eq = text.find('=');//tells the computer to find the actual position of = and store in a cariable eq
+		 if(eq != string::npos)//a condition so if there is an equal sign it executes the code in brackets and if not ignore it
+		 { text[eq] = ' ';//it replaces = sign with empty space 
+		 text += " ="; }//glues an = sign
 		cout<<text<<endl;//so the line in the file to be displayed on the screen
 		stringstream ss(text);//so the line can be break into words
 		string command,variable,value;//to store the words like three main things
@@ -25,13 +29,14 @@ int main()
 		
 		if(command == "take")//to ensure the syntax is accurate
 		{
-			int usertype;//to store written variables
-			cout<<variable;
-			cin>>usertype;//for user to type
-			memory[variable]= usertype;//to memorize all varables
+			stringstream converter(value);
+			int actualnumber;//to store written variables
+			converter>>actualnumber;//Extract the clean integer out of the blender (No keyboard cin needed!)
+			
+			memory[variable]=actualnumber;//to memorize all variables
 			variableNames.push_back(variable);//to store a list of variables
-			string clean= variable +"=";
 		}
+	
 		if(command=="display")
 		{
 			int val1=memory[variableNames[0]];
@@ -63,3 +68,4 @@ int main()
 		
 	}
 }
+
