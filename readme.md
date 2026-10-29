@@ -24,9 +24,7 @@ The syntax is:
 >To use it you have to make a txt file in the same folder where the c++ file will be otherwise it will give an error.\
 And simply you have to follow the syntax in your txt file and the compiler will generate the result for you.
 ---
-### 4-Links 
-- To open the **.cpp file**
->[Click here](interpreter.cpp)
+### 4-Link
 - To open the .cpp file in Github
 >[Click here](https://github.com/Aanabnoor/Interpreter-project/blob/main/interpreter.cpp)
 
