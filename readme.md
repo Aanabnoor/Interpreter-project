@@ -7,8 +7,8 @@
 [5-Code Syntax](#5--code)
 ## Details:-
 ### 1-Why i built this:
->My self made interpreter is my first ever project which i uploaded on github to check my github skills and also my programming fundamentals learning.\
- Although i took help from AI but i wrote the code myself.
+>My self made interpreter is my first ever project which i uploaded on github to check my github skills and also my programming fundamentals learning.
+
  ---
 ### 2-What it does:
 >My self made interpreter is a project where you can initialize and declare three variables and perform two functions.\
